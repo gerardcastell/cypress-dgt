@@ -6,9 +6,8 @@ First of all, we need to install dependencies so run the following command:
 npm i
 ```
 
-### Note: All the download will be located at: **_"cypress/downloads"_**
-
-To exec tests in console (usual way):
+To exec the script to visit the DGT page and download the previous month data run the command below. The download zip may be found at **_"cypress/downloads"_**
+:
 
 ```
 npm run start
