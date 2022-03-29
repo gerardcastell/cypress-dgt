@@ -4,7 +4,8 @@
   "description": "Regalito para Lopez de su Geri <3",
   "main": "index.js",
   "scripts": {
-    "start": "node ./node_modules/cypress/bin/cypress open",
+    "start": "node ./node_modules/cypress/bin/cypress run",
+    "watch": "node ./node_modules/cypress/bin/cypress open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
