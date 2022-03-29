@@ -16,6 +16,5 @@ describe('Should save changes in notifications tab', () => {
         });
         cy.get('input[value="Descargar"]').eq(1).should('exist').click();
       });
-    // cy.get('input[value="Descargar"]').eq(1).should('exist').click();
   });
 });
