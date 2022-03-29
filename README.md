@@ -1,6 +1,6 @@
 # cypress-dgt
 
-First of all, we need to install dependencies so run the folowing command:
+First of all, we need to install dependencies so run the following command:
 
 ```
 npm i
