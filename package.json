@@ -1,0 +1,26 @@
+{
+  "name": "cypress-dgt",
+  "version": "1.0.0",
+  "description": "Regalito para Lopez de su Geri <3",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/cypress/bin/cypress open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gerardcastell/cypress-dgt.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Gerard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerardcastell/cypress-dgt/issues"
+  },
+  "homepage": "https://github.com/gerardcastell/cypress-dgt#readme",
+  "dependencies": {
+    "cypress": "^9.5.3"
+  }
+}
