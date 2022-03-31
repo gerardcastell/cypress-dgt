@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Regalito para Lopez de su Geri <3",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node ./node_modules/cypress/bin/cypress run",
     "watch": "node ./node_modules/cypress/bin/cypress open",
+    "upload": "node uploader3s.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +24,8 @@
   },
   "homepage": "https://github.com/gerardcastell/cypress-dgt#readme",
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.58.0",
+    "@aws-sdk/credential-provider-ini": "^3.58.0",
     "cypress": "^9.5.3"
   }
 }

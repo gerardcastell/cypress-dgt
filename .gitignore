@@ -1,2 +1,6 @@
 cypress/downloads
-node_modules/
+cypress/videos
+
+/node_modules
+
+.env

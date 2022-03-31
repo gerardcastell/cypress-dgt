@@ -13,6 +13,12 @@ To exec the script to visit the DGT page and download the previous month data ru
 npm run start
 ```
 
+To upload first file generated at **_"cypress/downloads"_** to AWS S3:
+
+```
+npm run upload
+```
+
 To exec test in watch mode run:
 
 ```
