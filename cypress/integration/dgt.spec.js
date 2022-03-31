@@ -1,7 +1,4 @@
 describe('Should save changes in notifications tab', () => {
-  after(() => {
-    cy.task('uploloadFileToS3');
-  });
   it('Should Visit DGT', () => {
     cy.visit('https://sedeapl.dgt.gob.es/WEB_IEST_CONSULTA/subcategoria.faces');
   });
