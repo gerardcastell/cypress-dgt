@@ -1,7 +1,6 @@
-// Import required AWS SDK clients and commands for Node.js.
-import { PutObjectCommand, CreateBucketCommand } from '@aws-sdk/client-s3';
-import { s3Client } from './s3Client.js';
-import fs from 'fs';
+var aws = require('@aws-sdk/client-s3');
+var s3Client = require('./s3Client.js');
+var fs = require('fs');
 
 const files = fs.readdirSync('cypress/downloads/');
 const fileContent = fs.readFileSync(`cypress/downloads/${files[0]}`);
@@ -17,7 +16,7 @@ const run = async () => {
   // Create an Amazon S3 bucket.
   try {
     const data = await s3Client.send(
-      new CreateBucketCommand({ Bucket: params.Bucket })
+      new aws.CreateBucketCommand({ Bucket: params.Bucket })
     );
     console.log(data);
     console.log('Successfully created a bucket called ', data.Location);
@@ -27,7 +26,7 @@ const run = async () => {
   }
   // Create an object and upload it to the Amazon S3 bucket.
   try {
-    const results = await s3Client.send(new PutObjectCommand(params));
+    const results = await s3Client.send(new aws.PutObjectCommand(params));
     console.log(
       'Successfully created ' +
         params.Key +

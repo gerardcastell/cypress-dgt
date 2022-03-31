@@ -11,8 +11,7 @@
 
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
-// Import required AWS SDK clients and commands for Node.js.
-// import { PutObjectCommand, CreateBucketCommand, S3Client } from "@aws-sdk/client-s3";
+
 /**
  * @type {Cypress.PluginConfig}
  */

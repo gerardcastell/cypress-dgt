@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Regalito para Lopez de su Geri <3",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "node ./node_modules/cypress/bin/cypress run",
     "watch": "node ./node_modules/cypress/bin/cypress open",
